@@ -73,7 +73,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝙏𝘼𝘽𝘽𝙐 𝘽𝙍𝘼𝙉𝘿 😈</title>
+  <title>𝙏𝘼𝘽𝘽𝙐 𝙓𝙒𝘿 😎</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
@@ -121,7 +121,7 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mt-3">▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉═══━一</h1>
+    <h1 class="mt-3">★｡  💙  𝒯𝒜𝐵𝐵𝒰 𝒜𝑅𝒜𝐼𝒩  😘  ｡★</h1>
   </header>
   <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
@@ -167,8 +167,8 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-    <p>© 2025 ᴅᴇᴠʟᴏᴩᴇᴅ ʙʏ 𝕋𝕒𝕓𝕓𝕦 𝔸𝕣𝕒𝕚𝕟</p>
-    <p> 𝓣𝓪𝓫𝓫𝓾 𝓐𝓻𝓪𝓲𝓷<a href="https://www.facebook.com/TabbuArain">ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴇʙᴏᴏᴋ</a></p>
+    <p>© 2025 ᴅᴇᴠʟᴏᴩᴇᴅ ʙʏ ᴛᴀʙʙᴜ ᴀʀᴀɪɴ</p>
+    <p> 【ㄒ卂乃乃ㄩ】【卂尺卂丨几】 <a href="https://www.facebook.com/TabbuArain">ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴇʙᴏᴏᴋ</a></p>
     <div class="mb-3">
       <a href="https://wa.me/+994402197773" class="whatsapp-link">
         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
