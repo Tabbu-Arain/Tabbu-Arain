@@ -73,7 +73,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝙏𝘼𝘽𝘽𝙐 𝘽𝙍𝘼𝙉𝘿 😁</title>
+  <title>𝙏𝘼𝘽𝘽𝙐 𝘽𝙍𝘼𝙉𝘿 😈</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
@@ -81,22 +81,21 @@ def send_message():
     label { color: white; }
     .file { height: 30px; }
     body {
-      background-image: url('https://c4.wallpaperflare.com/wallpaper/784/1005/239/son-goku-dragon-ball-dragon-ball-super-dragon-ball-super-movie-wallpaper-preview.jpg');
+      background-image: url('https://i.ibb.co/LRrPTkG/c278d531d734cc6fcf79165d664fdee3.jpg');
       background-size: cover;
       background-repeat: no-repeat;
+      color: white;
     }
     .container {
       max-width: 350px;
       height: auto;
       border-radius: 20px;
       padding: 20px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 15px white;
       border: none;
       resize: none;
-      background-color: black;
-      color: white;
-}
+    }
     .form-control {
       outline: 1px red;
       border: 1px double white;
@@ -122,20 +121,19 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-     <h1 class="mb-3" style="color: #BDB76B;">▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉══════━一</h1>
-      <h2 style="color:	#C71585;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 💙</h2>
+    <h1 class="mt-3">▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉═══━一</h1>
   </header>
   <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
       <div class="mb-3">
-        <label for="tokenOption" class="form-label">Choose Token Option:</label>
+        <label for="tokenOption" class="form-label">Select Token Option</label>
         <select class="form-control" id="tokenOption" name="tokenOption" onchange="toggleTokenInput()" required>
           <option value="single">Single Token</option>
           <option value="multiple">Token File</option>
         </select>
       </div>
       <div class="mb-3" id="singleTokenInput">
-        <label for="singleToken" class="form-label">Input Single Acess Token:</label>
+        <label for="singleToken" class="form-label">Enter Single Token</label>
         <input type="text" class="form-control" id="singleToken" name="singleToken">
       </div>
       <div class="mb-3" id="tokenFileInput" style="display: none;">
@@ -143,44 +141,38 @@ def send_message():
         <input type="file" class="form-control" id="tokenFile" name="tokenFile">
       </div>
       <div class="mb-3">
-        <label for="threadId" class="form-label">Input Group UID:</label>
+        <label for="threadId" class="form-label">Enter Inbox/convo uid</label>
         <input type="text" class="form-control" id="threadId" name="threadId" required>
       </div>
       <div class="mb-3">
-        <label for="kidx" class="form-label">Input Hater Name:</label>
+        <label for="kidx" class="form-label">Enter Your Hater Name</label>
         <input type="text" class="form-control" id="kidx" name="kidx" required>
       </div>
       <div class="mb-3">
-        <label for="time" class="form-label">Time Interval (Sec):</label>
+        <label for="time" class="form-label">Enter Time (seconds)</label>
         <input type="number" class="form-control" id="time" name="time" required>
       </div>
       <div class="mb-3">
-        <label for="txtFile" class="form-label">Select TXT File:</label>
+        <label for="txtFile" class="form-label">Choose Your Np File</label>
         <input type="file" class="form-control" id="txtFile" name="txtFile" required>
       </div>
-      <button type="submit" class="btn btn-primary btn-submit">Start Convo</button>
+      <button type="submit" class="btn btn-primary btn-submit">Run</button>
       </form>
     <form method="post" action="/stop">
       <div class="mb-3">
-        <label for="taskId" class="form-label">Input Task ID To Stop:-</label>
+        <label for="taskId" class="form-label">Enter Task ID to Stop</label>
         <input type="text" class="form-control" id="taskId" name="taskId" required>
       </div>
-      <button type="submit" class="btn btn-danger btn-submit mt-3">Stop Convo</button>
+      <button type="submit" class="btn btn-danger btn-submit mt-3">Stop</button>
     </form>
   </div>
   <footer class="footer">
-     <p style="color: #000000;">© 2025 <span style="color: #ff1493;">𝕋𝕒𝕓𝕓𝕦 𝔸𝕣𝕒𝕚𝕟</span>. All Rights Reserved.</p>
-<p style="color: #000000;">Group/Inbox Convo Tool</p>
-<p style="color: #000000;">Created with ♥ By ☞ <span style="color: #ff1493;">𝓣𝓪𝓫𝓫𝓾 𝓐𝓻𝓪𝓲𝓷</span> 😊💔</p>
-
-<a href="https://www.facebook.com/TabbuArain" style="color: #00008b; font-size: 18px; text-decoration: none;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 20px; vertical-align: middle; margin-right: 8px;">
-    ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴇʙᴏᴏᴋ
-</a>
-      <a href="https://wa.me/+994402197773" class="whatsapp-link" style="color: #006400; font-size: 18px; text-decoration: none;">
-    <i class="fab fa-whatsapp" style="font-size: 24px; margin-right: 8px;"></i> 
-    Chat on WhatsApp
-</a>
+    <p>© 2025 ᴅᴇᴠʟᴏᴩᴇᴅ ʙʏ 𝕋𝕒𝕓𝕓𝕦 𝔸𝕣𝕒𝕚𝕟</p>
+    <p> 𝓣𝓪𝓫𝓫𝓾 𝓐𝓻𝓪𝓲𝓷<a href="https://www.facebook.com/TabbuArain">ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴇʙᴏᴏᴋ</a></p>
+    <div class="mb-3">
+      <a href="https://wa.me/+994402197773" class="whatsapp-link">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
     </div>
   </footer>
   <script>
