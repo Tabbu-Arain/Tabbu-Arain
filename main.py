@@ -123,7 +123,7 @@ def send_message():
 <body>
   <header class="header mt-4">
      <h1 class="mb-3" style="color: #BDB76B;">▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉══════━一</h1>
-      <h2 style="color: #708090;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 💙</h2>
+      <h2 style="color:	#C71585;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 💙</h2>
   </header>
   <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
