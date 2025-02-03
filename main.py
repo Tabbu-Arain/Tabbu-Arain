@@ -94,7 +94,9 @@ def send_message():
       box-shadow: 0 0 15px white;
       border: none;
       resize: none;
-    }
+      background-color: #808080; /* Light grey background */
+      color: #333333; /* Dark grey text */
+}
     .form-control {
       outline: 1px red;
       border: 1px double white;
