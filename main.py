@@ -121,8 +121,8 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-   <h1 class="mb-3" style="color: 	#FF1493;">▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉 𝙓𝘿══━一</h1>
-   <h2 style="color: #FF0000;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 👑✌</h2>
+   <h1 class="mb-3" style="color: 	#FFE4B5;">▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉 𝙓𝘿══━一</h1>
+   <h2 style="color:	#2F4F4F;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 👑✌</h2>
   </header>
   <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
@@ -168,9 +168,9 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-<p style="color: #000000;">© 2025 <span style="color: #ff1493;">𝕋𝕒𝕓𝕓𝕦 𝔸𝕣𝕒𝕚𝕟</span>. All Rights Reserved.</p>
+<p style="color: #000000;">© 2025 <span style="color: 	#0000FF;">𝕋𝕒𝕓𝕓𝕦 𝔸𝕣𝕒𝕚𝕟</span>. All Rights Reserved.</p>
 <p style="color: #000000;">Group/Inbox Convo Tool</p>
-<p style="color: #000000;">Created with ♥ By ☞ <span style="color: #ff1493;">𝓣𝓪𝓫𝓫𝓾 𝓐𝓻𝓪𝓲𝓷</span> 😊💔</p>
+<p style="color: #000000;">Created with 🖤 By ☞ <span style="color: 	#0000FF;">𝓣𝓪𝓫𝓫𝓾 𝓐𝓻𝓪𝓲𝓷</span> 😊💔</p>
     <a href="https://www.facebook.com/TabbuArain" style="color: #00008b; font-size: 18px; text-decoration: none;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 20px; vertical-align: middle; margin-right: 8px;">
     ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴇʙᴏᴏᴋ
