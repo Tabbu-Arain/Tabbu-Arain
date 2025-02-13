@@ -81,7 +81,7 @@ def send_message():
     label { color: white; }
     .file { height: 30px; }
     body {
-      background-image: url('https://c4.wallpaperflare.com/wallpaper/784/1005/239/son-goku-dragon-ball-dragon-ball-super-dragon-ball-super-movie-wallpaper-preview.jpg');
+      background-image: url('https://wallpapers.com/images/high/dragon-ball-z-goku-u25o3d0wat3ogx8p.webp');
       background-size: cover;
     }
     .container {
