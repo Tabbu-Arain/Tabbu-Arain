@@ -73,7 +73,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝙏𝘼𝘽𝘽𝙐 🐱✨</title>
+  <title>𝙏𝘼𝘽𝘽𝙐 😋🤍</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
@@ -121,8 +121,8 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-   <h1 class="mb-3" style="color: 	#FFE4B5;">▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉 𝙓𝘿══━一</h1>
-   <h2 style="color:	#2F4F4F;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 👑✌</h2>
+   <h1 class="mb-3" style="color: #2F4F4F;">▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉 𝙓𝘿══━一</h1>
+   <h2 style="color:	#7FFF00;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 👑🥵</h2>
   </header>
   <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
@@ -168,9 +168,9 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-<p style="color: #000000;">© 2025 <span style="color: 	#0000FF;">𝕋𝕒𝕓𝕓𝕦 𝔸𝕣𝕒𝕚𝕟</span>. All Rights Reserved.</p>
-<p style="color: #000000;">Group/Inbox Convo Tool</p>
-<p style="color: #000000;">Created with 🖤 By ☞ <span style="color: 	#0000FF;">𝓣𝓪𝓫𝓫𝓾 𝓐𝓻𝓪𝓲𝓷</span> 😊💔</p>
+<p style="color: #000000;">® 𝟐𝟎𝟐𝟓 <span style="color: 	#B0E0E6;">𝕋𝕒𝕓𝕓𝕦 𝔸𝕣𝕒𝕚𝕟</span>. 𝐀𝐥𝐥 𝐑𝐢𝐠𝐡𝐭𝐬 𝐑𝐞𝐬𝐞𝐫𝐯𝐞𝐝.</p>
+<p style="color: #000000;">Group Convo Tool</p>
+<p style="color: #000000;">𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐰𝐢𝐭𝐡 🖤 𝐁𝐲 ☞ <span style="color: 	#B0E0E6;">𝓣𝓪𝓫𝓫𝓾 𝓐𝓻𝓪𝓲𝓷</span> 😊💔</p>
     <a href="https://www.facebook.com/TabbuArain" style="color: #00008b; font-size: 18px; text-decoration: none;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 20px; vertical-align: middle; margin-right: 8px;">
     ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴇʙᴏᴏᴋ
