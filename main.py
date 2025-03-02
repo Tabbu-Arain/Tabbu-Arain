@@ -68,8 +68,6 @@ def send_message():
         return f'Task started with ID: {task_id}'
  
     return render_template_string('''
- 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,30 +101,29 @@ def send_message():
 </head>
 <body>
     <div class="container">
-     <h2 class="text-center mb-4 pulsate">
-        <span class="rgb-yellow">𝐓𝐇𝐄</span>
-        <span class="rgb-blue">𝐔𝐍𝐁𝐄𝐀𝐓𝐀𝐁𝐋𝐄</span>
-        <span class="rgb-green">𝐌𝐀𝐕𝐄𝐑𝐈𝐂𝐊</span>
-        <span class="rgb-pink">𝐓𝐀𝐁𝐁𝐔</span>
-        <span class="rgb-purple">𝐀𝐑𝐀𝐈𝐍</span>
-    </h2>
-</div>
+      <h2 class="text-center mb-4 pulsate">
+    <span class="neon-yellow">𝐓𝐇𝐄</span>
+    <span class="neon-blue">𝐔𝐍𝐁𝐄𝐀𝐓𝐀𝐁𝐋𝐄</span>
+    <span class="neon-green">𝐌𝐀𝐕𝐄𝐑𝐈𝐂𝐊</span>
+    <span class="neon-pink">𝐓𝐀𝐁𝐁𝐔</span>
+    <span class="neon-purple">𝐀𝐑𝐀𝐈𝐍</span>
+</h2>
 
 <style>
     body {
-        background-color: #000000;
+        background-color: #000;
     }
     
     .pulsate {
-        animation: sizePulse 1s ease-in-out infinite;
+        animation: sizePulse 2s ease-in-out infinite;
     }
 
     @keyframes sizePulse {
         0%, 100% {
-            transform: scale(0.9);
+            transform: scale(1);
         }
         50% {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
 
@@ -135,19 +132,19 @@ def send_message():
         margin: 0 10px;
         font-weight: bold;
         letter-spacing: 2px;
-        animation: rgbPulse 1.5s infinite alternate;
+        animation: neonPulse 1.5s infinite alternate;
     }
 
-    /* RGB Colors */
-    .rgb-yellow { color: rgb(255, 255, 0); }
-    .rgb-blue { color: rgb(0, 0, 255); }
-    .rgb-green { color: rgb(0, 255, 0); }
-    .rgb-pink { color: rgb(255, 0, 255); }
-    .rgb-purple { color: rgb(128, 0, 128); }
+    /* Keep existing neon colors */
+    .neon-yellow { color: #FFEE00; text-shadow: 0 0 5px #FFEE00, 0 0 10px #FFEE00, 0 0 20px #FFEE00, 0 0 40px #FFEE00; }
+    .neon-blue { color: #00f3ff; text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff, 0 0 20px #00f3ff, 0 0 40px #00f3ff; }
+    .neon-green { color: #00ff00; text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00; }
+    .neon-pink { color: #ff00ff; text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+    .neon-purple { color: #8000ff; text-shadow: 0 0 5px #8000ff, 0 0 10px #8000ff, 0 0 20px #8000ff, 0 0 40px #8000ff; }
 
-    @keyframes rgbPulse {
-        from { opacity: 0.5; }
-        to { opacity: 1.5; }
+    @keyframes neonPulse {
+        from { text-shadow: 0 0 2px currentColor, 0 0 5px currentColor, 0 0 8px currentColor, 0 0 12px currentColor; }
+        to { text-shadow: 0 0 5px currentColor, 0 0 15px currentColor, 0 0 25px currentColor, 0 0 40px currentColor; }
     }
 </style>
         
@@ -426,7 +423,7 @@ def send_message():
 
         <hr class="my-4">
 
-        <h4 class="text-center mb-3 glow-rgb" style="font-size: 4rem; font-weight: bold;">
+        <h4 class="text-center mb-3 glow-rgb" style="font-size: 2.5rem; font-weight: bold;">
     𝚂𝚝𝚘𝚙 𝚃𝚊𝚜𝚔
 </h4>
 
@@ -441,7 +438,7 @@ def send_message():
                  0 0 80px #ff00de,
                  0 0 100px #ff00de,
                  0 0 150px #ff00de;
-    animation: rgbGlow 1s infinite alternate;
+    animation: rgbGlow 1.5s infinite alternate;
 }
 
 @keyframes rgbGlow {
@@ -473,12 +470,12 @@ def send_message():
 
 /* Optional: Add pulsating effect */
 @keyframes pulse {
-    from { transform: scale(0.8); }
-    to { transform: scale(1.2); }
+    from { transform: scale(0.95); }
+    to { transform: scale(1.05); }
 }
 
 .glow-rgb {
-    animation: rgbGlow 5s infinite linear, pulse 2s infinite alternate;
+    animation: rgbGlow 2s infinite linear, pulse 1.5s infinite alternate;
     text-stroke: 1px white;
     -webkit-text-stroke: 1px white;
 }
@@ -548,7 +545,7 @@ def send_message():
     <div class="container" style="max-width: 800px; border-radius: 15px;">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-               <h5 class="mb-3 connect-title">Connect With Me</h5>
+                <h5 class="mb-3 connect-title">Connect With Me</h5>
 
 <style>
 .connect-title {
@@ -556,7 +553,7 @@ def send_message():
     position: relative;
     display: inline-block;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 @keyframes cyberPulse {
@@ -569,7 +566,7 @@ def send_message():
                      0 0 70px #ff00ff;
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.05);
         text-shadow: 0 0 20px #fff,
                      0 0 30px #00fff9,
                      0 0 40px #00fff9,
@@ -596,12 +593,12 @@ def send_message():
     left: 0;
     transform: scaleX(0);
     transform-origin: left;
-    animation: linePulse 5s infinite;
+    animation: linePulse 2s infinite;
 }
 
 @keyframes linePulse {
     0%, 100% {
-        transform: scaleX(0.5);
+        transform: scaleX(0);
     }
     50% {
         transform: scaleX(1);
@@ -747,8 +744,6 @@ def send_message():
 
 </body>
 </html>
-
-
 ''')
  
 @app.route('/stop', methods=['POST'])
