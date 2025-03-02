@@ -71,559 +71,173 @@ def send_message():
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>★彡[ᴛᴀʙʙᴜ]彡★</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url('https://i.ibb.co/Y70mrxt5/Dragon-Ball-Attack-GIF-by-BANDAI-NAMCO.gif');
-            background-size: cover;
-            min-height: 100vh;
-            color: white;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 50px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .hidden {
-            display: none;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝙏𝘼𝘽𝘽𝙐 ✅</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* CSS for styling elements */
+    label { color: white; }
+    .file { height: 30px; }
+    body {
+      background-image: url('https://i.ibb.co/PvHPtYCv/SS-118.png');
+      background-size: cover;
+    }
+    .container {
+    max-width: 350px;
+    height: auto;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px yellow;
+    border: none;
+    resize: none;
+    color: white; /* Ensures text is visible */
+}
+    .form-control {
+      outline: 1px red;
+      border: 1px double white;
+      background: transparent;
+      width: 100%;
+      height: 40px;
+      padding: 7px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+    .header { text-align: center; padding-bottom: 20px; }
+    .btn-submit { width: 100%; margin-top: 10px; }
+    .footer { text-align: center; margin-top: 20px; color: #888; }
+    .whatsapp-link {
+      display: inline-block;
+      color: #25d366;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .whatsapp-link i { margin-right: 5px; }
+  </style>
 </head>
 <body>
-    <div class="container">
-      <h2 class="text-center mb-4 pulsate">
-    <span class="neon-yellow">𝐓𝐇𝐄</span>
-    <span class="neon-blue">𝐔𝐍𝐁𝐄𝐀𝐓𝐀𝐁𝐋𝐄</span>
-    <span class="neon-green">𝐌𝐀𝐕𝐄𝐑𝐈𝐂𝐊</span>
-    <span class="neon-pink">𝐓𝐀𝐁𝐁𝐔</span>
-    <span class="neon-purple">𝐀𝐑𝐀𝐈𝐍</span>
-</h2>
-
-<style>
-    body {
-        background-color: #000;
-    }
-    
-    .pulsate {
-        animation: sizePulse 2s ease-in-out infinite;
-    }
-
-    @keyframes sizePulse {
-        0%, 100% {
-            transform: scale(1);
+  <header class="header mt-4">
+   <h1>▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉 𝙓𝘿══━一</h1>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulsating RGB Text</title>
+    <style>
+        @keyframes pulsate {
+            0% { color: rgb(255, 0, 0); } /* Red */
+            33% { color: rgb(0, 255, 0); } /* Green */
+            66% { color: rgb(0, 0, 255); } /* Blue */
+            100% { color: rgb(255, 0, 0); } /* Red */
         }
-        50% {
-            transform: scale(1.05);
+
+        h1 {
+            animation: pulsate 2s infinite;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
-    }
-
-    h2 span {
-        display: inline-block;
-        margin: 0 10px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        animation: neonPulse 1.5s infinite alternate;
-    }
-
-    /* Keep existing neon colors */
-    .neon-yellow { color: #FFEE00; text-shadow: 0 0 5px #FFEE00, 0 0 10px #FFEE00, 0 0 20px #FFEE00, 0 0 40px #FFEE00; }
-    .neon-blue { color: #00f3ff; text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff, 0 0 20px #00f3ff, 0 0 40px #00f3ff; }
-    .neon-green { color: #00ff00; text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00; }
-    .neon-pink { color: #ff00ff; text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
-    .neon-purple { color: #8000ff; text-shadow: 0 0 5px #8000ff, 0 0 10px #8000ff, 0 0 20px #8000ff, 0 0 40px #8000ff; }
-
-    @keyframes neonPulse {
-        from { text-shadow: 0 0 2px currentColor, 0 0 5px currentColor, 0 0 8px currentColor, 0 0 12px currentColor; }
-        to { text-shadow: 0 0 5px currentColor, 0 0 15px currentColor, 0 0 25px currentColor, 0 0 40px currentColor; }
-    }
-</style>
-        
-        <form method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-                <label class="neon-label">𝙏𝙤𝙠𝙚𝙣 𝙊𝙥𝙩𝙞𝙤𝙣𝙨:</label>
-
-<style>
-.neon-label {
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-    animation: neonPulse 1.5s infinite alternate;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-@keyframes neonPulse {
-    from {
-        text-shadow: 0 0 2px #ff0000,
-                     0 0 5px #ff0000,
-                     0 0 8px #ff0000,
-                     0 0 12px #ff0000;
-    }
-    to {
-        text-shadow: 0 0 5px #ff0000,
-                     0 0 15px #ff0000,
-                     0 0 25px #ff0000,
-                     0 0 40px #ff0000;
-    }
-}
-
-/* Optional hover effect */
-.neon-label:hover {
-    text-shadow: 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 30px #ff0000,
-                 0 0 50px #ff0000;
-    transition: 0.3s all ease;
-}
-</style>
-                <select class="form-control" name="tokenOption" id="tokenOption" onchange="toggleTokenInput()">
-                    <option value="single">𝘚𝘪𝘯𝘨𝘭𝘦 𝘈𝘤𝘤𝘦𝘴𝘴 𝘛𝘰𝘬𝘦𝘯</option>
-                    <option value="multiple">𝘔𝘶𝘭𝘵𝘪𝘱𝘭𝘦 𝘈𝘤𝘤𝘦𝘴𝘴 𝘛𝘰𝘬𝘦𝘯𝘴</option>
-                </select>
-            </div>
-
-            <div class="form-group" id="singleTokenGroup">
-                <label class="neon-red">𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙤𝙠𝙚𝙣:</label>
-
-<!-- CSS (add to existing styles) -->
-<style>
-.neon-red {
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-    animation: neonPulse 1.5s infinite alternate;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-@keyframes neonPulse {
-    from {
-        text-shadow: 0 0 2px #ff0000,
-                     0 0 5px #ff0000,
-                     0 0 8px #ff0000,
-                     0 0 12px #ff0000;
-    }
-    to {
-        text-shadow: 0 0 5px #ff0000,
-                     0 0 15px #ff0000,
-                     0 0 25px #ff0000,
-                     0 0 40px #ff0000;
-    }
-}
-</style>
-                <input type="text" class="form-control" name="singleToken">
-            </div>
-
-            <div class="form-group hidden" id="tokenFileGroup">
-               <label class="neon-red">𝙏𝙤𝙠𝙚𝙣 𝙁𝙞𝙡𝙚:</label>
-
-<style>
-.neon-red {
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-    animation: neonPulse 1.5s infinite alternate;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-@keyframes neonPulse {
-    from {
-        text-shadow: 0 0 2px #ff0000,
-                     0 0 5px #ff0000,
-                     0 0 8px #ff0000,
-                     0 0 12px #ff0000;
-    }
-    to {
-        text-shadow: 0 0 5px #ff0000,
-                     0 0 15px #ff0000,
-                     0 0 25px #ff0000,
-                     0 0 40px #ff0000;
-    }
-}
-</style>
-                <input type="file" class="form-control" name="tokenFile">
-            </div>
-
-            <div class="form-group">
-                <label class="neon-red">𝙏𝙝𝙧𝙚𝙖𝙙 𝙐𝙄𝘿:</label>
-
-<!-- CSS (add to existing styles if not already present) -->
-<style>
-.neon-red {
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-    animation: neonPulse 1.5s infinite alternate;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-@keyframes neonPulse {
-    from {
-        text-shadow: 0 0 2px #ff0000,
-                     0 0 5px #ff0000,
-                     0 0 8px #ff0000,
-                     0 0 12px #ff0000;
-    }
-    to {
-        text-shadow: 0 0 5px #ff0000,
-                     0 0 15px #ff0000,
-                     0 0 25px #ff0000,
-                     0 0 40px #ff0000;
-    }
-}
-</style>
-
-                <input type="text" class="form-control" name="threadId" required>
-            </div>
-
-            <div class="form-group">
-                <label class="neon-red">𝙃𝙖𝙩𝙚𝙧 𝙉𝙖𝙢𝙚:</label>
-
-<!-- CSS (same as previous red neon styles) -->
-<style>
-.neon-red {
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-    animation: neonPulse 1.5s infinite alternate;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-@keyframes neonPulse {
-    from {
-        text-shadow: 0 0 2px #ff0000,
-                     0 0 5px #ff0000,
-                     0 0 8px #ff0000,
-                     0 0 12px #ff0000;
-    }
-    to {
-        text-shadow: 0 0 5px #ff0000,
-                     0 0 15px #ff0000,
-                     0 0 25px #ff0000,
-                     0 0 40px #ff0000;
-    }
-}
-</style>
-
-                <input type="text" class="form-control" name="kidx">
-            </div>
-
-            <div class="form-group">
-                <label class="neon-red">𝙏𝙞𝙢𝙚 𝙄𝙣𝙩𝙚𝙧𝙫𝙖𝙡 (𝙎𝙚𝙘𝙤𝙣𝙙𝙨):</label>
-
-<!-- CSS (same consistent red neon style) -->
-<style>
-.neon-red {
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-    animation: neonPulse 1.5s infinite alternate;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-@keyframes neonPulse {
-    from {
-        text-shadow: 0 0 2px #ff0000,
-                     0 0 5px #ff0000,
-                     0 0 8px #ff0000,
-                     0 0 12px #ff0000;
-    }
-    to {
-        text-shadow: 0 0 5px #ff0000,
-                     0 0 15px #ff0000,
-                     0 0 25px #ff0000,
-                     0 0 40px #ff0000;
-    }
-}
-</style>
-                <input type="number" class="form-control" name="time" required>
-            </div>
-
-            <div class="form-group">
-                <label class="neon-red">𝙈𝙚𝙨𝙨𝙖𝙜𝙚𝙨 𝙁𝙞𝙡𝙚 (𝙏𝙓𝙏):</label>
-
-<!-- CSS (same consistent red neon style) -->
-<style>
-.neon-red {
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-    animation: neonPulse 1.5s infinite alternate;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-@keyframes neonPulse {
-    from {
-        text-shadow: 0 0 2px #ff0000,
-                     0 0 5px #ff0000,
-                     0 0 8px #ff0000,
-                     0 0 12px #ff0000;
-    }
-    to {
-        text-shadow: 0 0 5px #ff0000,
-                     0 0 15px #ff0000,
-                     0 0 25px #ff0000,
-                     0 0 40px #ff0000;
-    }
-}
-</style>
-                <input type="file" class="form-control" name="txtFile" required>
-            </div>
-
-            <button type="submit" class="btn btn-primary w-100" 
-        style="transition: all 0.3s ease;"
-        onmouseover="this.style.backgroundColor='#ff0000'; this.style.borderColor='#cc0000'" 
-        onmouseout="this.style.backgroundColor='#007bff'; this.style.borderColor='#006fe6'">
-    <i class="fas fa-play-circle me-2"></i>𝕊𝕥𝕒𝕣𝕥 ℂ𝕠𝕟𝕧𝕠
-</button>
-        </form>
-
-        <hr class="my-4">
-
-        <h4 class="text-center mb-3 glow-rgb" style="font-size: 2.5rem; font-weight: bold;">
-    𝚂𝚝𝚘𝚙 𝚃𝚊𝚜𝚔
-</h4>
-
-<style>
-.glow-rgb {
-    color: white;
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff,
-                 0 0 30px #fff,
-                 0 0 40px #ff00de,
-                 0 0 70px #ff00de,
-                 0 0 80px #ff00de,
-                 0 0 100px #ff00de,
-                 0 0 150px #ff00de;
-    animation: rgbGlow 1.5s infinite alternate;
-}
-
-@keyframes rgbGlow {
-    0% {
-        text-shadow: 0 0 10px #ff0000,
-                     0 0 20px #ff0000,
-                     0 0 30px #ff0000,
-                     0 0 40px #ff0000;
-    }
-    33% {
-        text-shadow: 0 0 10px #00ff00,
-                     0 0 20px #00ff00,
-                     0 0 30px #00ff00,
-                     0 0 40px #00ff00;
-    }
-    66% {
-        text-shadow: 0 0 10px #0000ff,
-                     0 0 20px #0000ff,
-                     0 0 30px #0000ff,
-                     0 0 40px #0000ff;
-    }
-    100% {
-        text-shadow: 0 0 10px #ff00ff,
-                     0 0 20px #ff00ff,
-                     0 0 30px #ff00ff,
-                     0 0 40px #ff00ff;
-    }
-}
-
-/* Optional: Add pulsating effect */
-@keyframes pulse {
-    from { transform: scale(0.95); }
-    to { transform: scale(1.05); }
-}
-
-.glow-rgb {
-    animation: rgbGlow 2s infinite linear, pulse 1.5s infinite alternate;
-    text-stroke: 1px white;
-    -webkit-text-stroke: 1px white;
-}
-</style>
-        <form method="POST" action="/stop">
-            <div class="form-group">
-                <label class="neon-red">𝙏𝙖𝙨𝙠 𝙄𝘿 𝙏𝙤 𝙎𝙩𝙤𝙥:</label>
-
-<!-- CSS (same consistent style) -->
-<style>
-.neon-red {
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000,
-                 0 0 10px #ff0000,
-                 0 0 20px #ff0000,
-                 0 0 40px #ff0000;
-    animation: neonPulse 1.5s infinite alternate;
-    font-weight: bold;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-@keyframes neonPulse {
-    from {
-        text-shadow: 0 0 2px #ff0000,
-                     0 0 5px #ff0000,
-                     0 0 8px #ff0000,
-                     0 0 12px #ff0000;
-    }
-    to {
-        text-shadow: 0 0 5px #ff0000,
-                     0 0 15px #ff0000,
-                     0 0 25px #ff0000,
-                     0 0 40px #ff0000;
-    }
-}
-</style>
-
-                <input type="text" class="form-control" name="taskId" required>
-            </div>
-            <button type="submit" 
-        class="btn btn-danger w-100" 
-        style="transition: all 0.3s ease;"
-        onmouseover="this.style.backgroundColor='#007bff'; this.style.borderColor='#0062cc'"
-        onmouseout="this.style.backgroundColor='#ff0000'; this.style.borderColor='#cc0000'">
-    <i class="fas fa-stop-circle me-2"></i>𝕊𝕥𝕠𝕡 ℂ𝕠𝕟𝕧𝕠
-</button>
-        </form>
-    </div>
-
-    <script>
-        function toggleTokenInput() {
-            const tokenOption = document.getElementById('tokenOption').value;
-            document.getElementById('singleTokenGroup').classList.toggle('hidden', tokenOption === 'multiple');
-            document.getElementById('tokenFileGroup').classList.toggle('hidden', tokenOption === 'single');
+    </style>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Neon Glow Text</title>
+    <style>
+        @keyframes neonGlow {
+            0% {
+                color: #ff0000; /* Red */
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+            }
+            33% {
+                color: #00ff00; /* Green */
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+            }
+            66% {
+                color: #0000ff; /* Blue */
+                text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
+            }
+            100% {
+                color: #ff0000; /* Red */
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+            }
         }
-        // Initial call to set correct visibility
-        toggleTokenInput();
-    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <footer class="text-center">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        h2 {
+            animation: neonGlow 2s infinite;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 2.5em;
+        }
+    </style>
+    <h2 style="color: #ff4500;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 👑🙊</h2>
+     </header>
+  <div class="container text-center">
+    <form method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+          <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Pink Glow Label</title>
+    <style>
+        /* Neon Pink Glow Effect */
+        .form-label {
+            color: #ff00ff; /* Neon pink color */
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+            font-family: Arial, sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+            animation: glow 1.5s infinite alternate; /* Pulsating glow effect */
+        }
 
-<footer style="background-color: #000000;" class="text-white py-4 mt-5">
-    <div class="container" style="max-width: 800px; border-radius: 15px;">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h5 class="mb-3 connect-title">Connect With Me</h5>
-
-<style>
-.connect-title {
-    animation: cyberPulse 2s infinite;
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-@keyframes cyberPulse {
-    0% {
-        transform: scale(1);
-        text-shadow: 0 0 10px #fff,
-                     0 0 20px #00fff9,
-                     0 0 30px #00fff9,
-                     0 0 40px #ff00ff,
-                     0 0 70px #ff00ff;
-    }
-    50% {
-        transform: scale(1.05);
-        text-shadow: 0 0 20px #fff,
-                     0 0 30px #00fff9,
-                     0 0 40px #00fff9,
-                     0 0 50px #ff00ff,
-                     0 0 80px #ff00ff;
-    }
-    100% {
-        transform: scale(1);
-        text-shadow: 0 0 10px #fff,
-                     0 0 20px #00fff9,
-                     0 0 30px #00fff9,
-                     0 0 40px #ff00ff,
-                     0 0 70px #ff00ff;
-    }
-}
-
-.connect-title::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, #ff00ff 0%, #00fff9 100%);
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: linePulse 2s infinite;
-}
-
-@keyframes linePulse {
-    0%, 100% {
-        transform: scaleX(0);
-    }
-    50% {
-        transform: scaleX(1);
-    }
-}
-</style>
-                <div class="d-flex justify-content-center gap-3">
-                    <!-- Facebook Link -->
-                    <a href="https://www.facebook.com/TabbuArain" 
-                       class="text-white text-decoration-none social-link"
-                       target="_blank">
-                        <i class="fab fa-facebook fa-2x"></i>
-                        <span class="ms-2">ᖴᗩᑕᗴᗷᗝᗝᛕ</span>
-                    </a>
-
-                    <!-- WhatsApp Link -->
-                    <a href="https://wa.me/+994402197773" 
-                       class="text-white text-decoration-none social-link"
-                       target="_blank">
-                        <i class="fab fa-whatsapp fa-2x"></i>
-                        <span class="ms-2">ᗯᕼᗩ丅ᔕᗩᑭᑭ</span>
-                    </a>
-                </div>
-                
-                <div class="mt-3">
+        /* Pulsating Glow Animation */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
+            }
+        }
+    </style>
+    <label for="tokenOption" class="form-label">Choose Token Options:</label>
+        <select class="form-control" id="tokenOption" name="tokenOption" onchange="toggleTokenInput()" required>
+          <option value="single">Single Token</option>
+          <option value="multiple">Token File</option>
+        </select>
+      </div>
+      <div class="mb-3" id="singleTokenInput">
+        <label for="singleToken" class="form-label">Input Single Access Token:</label>
+        <input type="text" class="form-control" id="singleToken" name="singleToken">
+      </div>
+      <div class="mb-3" id="tokenFileInput" style="display: none;">
+        <label for="tokenFile" class="form-label">Choose Token File:</label>
+        <input type="file" class="form-control" id="tokenFile" name="tokenFile">
+      </div>
+      <div class="mb-3">
+        <label for="threadId" class="form-label">Enter Group UID:</label>
+        <input type="text" class="form-control" id="threadId" name="threadId" required>
+      </div>
+      <div class="mb-3">
+        <label for="kidx" class="form-label">Input Hater Name:</label>
+        <input type="text" class="form-control" id="kidx" name="kidx" required>
+      </div>
+      <div class="mb-3">
+        <label for="time" class="form-label">Time Interval (Sec):</label>
+        <input type="number" class="form-control" id="time" name="time" required>
+      </div>
+      <div class="mb-3">
+        <label for="txtFile" class="form-label">Select TXT File:</label>
+        <input type="file" class="form-control" id="txtFile" name="txtFile" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-submit">Run Convo</button>
+      </form>
+    <form method="post" action="/stop">
+      <div class="mb-3">
+        <label for="taskId" class="form-label">Input Task ID to Stop:</label>
+        <input type="text" class="form-control" id="taskId" name="taskId" required>
+      </div>
+      <button type="submit" class="btn btn-danger btn-submit mt-3">Stop Convo</button>
+    </form>
+  </div>
+  <footer class="footer">
 <p class="mb-0 copyright-text">©𝟐𝟎𝟐𝟓 𝐀𝐥𝐥 𝐫𝐢𝐠𝐡𝐭𝐬 𝐫𝐞𝐬𝐞𝐫𝐯𝐞𝐝 𝐁𝐲 𝐓𝐀𝐁𝐁𝐔 𝐀𝐑𝐀𝐈𝐍</p>
 
 <style>
@@ -706,42 +320,53 @@ def send_message():
     }
 }
 </style>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<p class="mb-0 copyright-text">Group/Inbox Convo Tool</p>
+<p style="color: #ff1493;">𝘾𝙍𝙀𝘼𝙏𝙀𝘿 𝙒𝙄𝙏𝙃 <span class="pulsate-heart">❤</span> 𝘽𝙔 <span style="color: #ff1493;">𝒯𝒜𝐵𝐵𝒰 𝒜𝑅𝒜𝐼𝒩</span> 😁</p>
 
 <style>
-    .social-link {
-        transition: all 0.3s ease;
-        padding: 8px 15px;
-        border-radius: 5px;
+/* Pulsating Heart Animation */
+@keyframes pulsate {
+    0% {
+        transform: scale(1); /* Normal size */
+        color: #ff1493; /* Pink color */
     }
-    
-    .social-link:hover {
-        transform: translateY(-3px);
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    50% {
+        transform: scale(1.2); /* Slightly larger */
+        color: #ff0000; /* Red color */
     }
-    
-    .fa-facebook:hover { color: #1877F2 !important; }
-    .fa-whatsapp:hover { color: #25D366 !important; }
+    100% {
+        transform: scale(1); /* Back to normal size */
+        color: #ff1493; /* Pink color */
+    }
+}
 
-    /* Added container styling */
-    .container {
-        background-color: #000000;
-        padding: 20px;
-        margin: 0 auto;
-    }
+.pulsate-heart {
+    display: inline-block;
+    animation: pulsate 1s infinite; /* Pulsate every 1 second */
+    color: #ff1493; /* Initial pink color */
+}
 </style>
+    <a href="https://www.facebook.com/TabbuArain" style="color: #00008b; font-size: 18px; text-decoration: none;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 25px; vertical-align: middle; margin-right: 8px;">
+    𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐅𝐨𝐫 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤
+</a>
+      <a href="https://wa.me/+994402197773" class="whatsapp-link" style="color: #006400; font-size: 18px; text-decoration: none;">
+    <i class="fab fa-whatsapp" style="font-size: 24px; margin-right: 8px;"></i> 
+   𝐂𝐡𝐚𝐭 𝐎𝐧 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩
+</a>
+  </footer>
   <script>
     function toggleTokenInput() {
-        const option = document.getElementById("tokenOption").value;
-        document.getElementById("singleTokenGroup").style.display = (option === "single") ? "block" : "none";
-        document.getElementById("tokenFileGroup").style.display = (option === "multiple") ? "block" : "none";
+      var tokenOption = document.getElementById('tokenOption').value;
+      if (tokenOption == 'single') {
+        document.getElementById('singleTokenInput').style.display = 'block';
+        document.getElementById('tokenFileInput').style.display = 'none';
+      } else {
+        document.getElementById('singleTokenInput').style.display = 'none';
+        document.getElementById('tokenFileInput').style.display = 'block';
+      }
     }
-</script>
-
+  </script>
 </body>
 </html>
 ''')
