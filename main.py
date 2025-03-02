@@ -73,79 +73,60 @@ def send_message():
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝙏𝘼𝘽𝘽𝙐 😃</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-    /* CSS for styling elements */
-    label { color: white; }
-    .file { height: 30px; }
-    body {
-      background-image: url('https://i.ibb.co/Y70mrxt5/Dragon-Ball-Attack-GIF-by-BANDAI-NAMCO.gif');
-      background-size: cover;
-    }
-    .container
- {
-      max-width: 600px;
-      height: auto;
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0 15px white;
-      border: none;
-      resize: none;
-      color: white; /* Ensures text is visible */
-  }
-    .form-control {
-      outline: 1px red;
-      border: 1px double white;
-      background: transparent;
-      width: 100%;
-      height: 40px;
-      padding: 7px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      color: white;
-    }
-    .header { text-align: center; padding-bottom: 20px; }
-    .btn-submit { width: 100%; margin-top: 10px; }
-    .footer { text-align: center; margin-top: 20px; color: #888; }
-    .whatsapp-link {
-      display: inline-block;
-      color: #25d366;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-    .whatsapp-link i { margin-right: 5px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★彡[ᴛᴀʙʙᴜ]彡★</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://i.ibb.co/Y70mrxt5/Dragon-Ball-Attack-GIF-by-BANDAI-NAMCO.gif');
+            background-size: cover;
+            min-height: 100vh;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-      <h2 class="text-center mb-4 pulsate">
-    <span class="neon-yellow">𝐓𝐇𝐄</span>
-    <span class="neon-blue">𝐔𝐍𝐁𝐄𝐀𝐓𝐀𝐁𝐋𝐄</span>
-    <span class="neon-green">𝐌𝐀𝐕𝐄𝐑𝐈𝐂𝐊</span>
-    <span class="neon-pink">𝐓𝐀𝐁𝐁𝐔</span>
-    <span class="neon-purple">𝐀𝐑𝐀𝐈𝐍</span>
-</h2>
+    <h2 class="text-center mb-4 pulsate">
+        <span class="rgb-yellow">𝐓𝐇𝐄</span>
+        <span class="rgb-blue">𝐔𝐍𝐁𝐄𝐀𝐓𝐀𝐁𝐋𝐄</span>
+        <span class="rgb-green">𝐌𝐀𝐕𝐄𝐑𝐈𝐂𝐊</span>
+        <span class="rgb-pink">𝐓𝐀𝐁𝐁𝐔</span>
+        <span class="rgb-purple">𝐀𝐑𝐀𝐈𝐍</span>
+    </h2>
+</div>
 
 <style>
     body {
-        background-color: #000;
+        background-color: #000000;
     }
     
     .pulsate {
-        animation: sizePulse 2s ease-in-out infinite;
+        animation: sizePulse 1s ease-in-out infinite;
     }
 
     @keyframes sizePulse {
         0%, 100% {
-            transform: scale(1);
+            transform: scale(0.9);
         }
         50% {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
     }
 
@@ -154,19 +135,19 @@ def send_message():
         margin: 0 10px;
         font-weight: bold;
         letter-spacing: 2px;
-        animation: neonPulse 1.5s infinite alternate;
+        animation: rgbPulse 1.5s infinite alternate;
     }
 
-    /* Keep existing neon colors */
-    .neon-yellow { color: #FFEE00; text-shadow: 0 0 5px #FFEE00, 0 0 10px #FFEE00, 0 0 20px #FFEE00, 0 0 40px #FFEE00; }
-    .neon-blue { color: #00f3ff; text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff, 0 0 20px #00f3ff, 0 0 40px #00f3ff; }
-    .neon-green { color: #00ff00; text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00; }
-    .neon-pink { color: #ff00ff; text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
-    .neon-purple { color: #8000ff; text-shadow: 0 0 5px #8000ff, 0 0 10px #8000ff, 0 0 20px #8000ff, 0 0 40px #8000ff; }
+    /* RGB Colors */
+    .rgb-yellow { color: rgb(255, 255, 0); }
+    .rgb-blue { color: rgb(0, 0, 255); }
+    .rgb-green { color: rgb(0, 255, 0); }
+    .rgb-pink { color: rgb(255, 0, 255); }
+    .rgb-purple { color: rgb(128, 0, 128); }
 
-    @keyframes neonPulse {
-        from { text-shadow: 0 0 2px currentColor, 0 0 5px currentColor, 0 0 8px currentColor, 0 0 12px currentColor; }
-        to { text-shadow: 0 0 5px currentColor, 0 0 15px currentColor, 0 0 25px currentColor, 0 0 40px currentColor; }
+    @keyframes rgbPulse {
+        from { opacity: 0.5; }
+        to { opacity: 1.5; }
     }
 </style>
         
@@ -219,7 +200,7 @@ def send_message():
             </div>
 
             <div class="form-group" id="singleTokenGroup">
-                <label class="neon-red">𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙤𝙠𝙚𝙣:</label>
+               <label class="neon-red">𝘼𝙘𝙘𝙚𝙨𝙨 𝙏𝙤𝙠𝙚𝙣:</label>
 
 <!-- CSS (add to existing styles) -->
 <style>
@@ -445,7 +426,7 @@ def send_message():
 
         <hr class="my-4">
 
-        <h4 class="text-center mb-3 glow-rgb" style="font-size: 2.5rem; font-weight: bold;">
+        <h4 class="text-center mb-3 glow-rgb" style="font-size: 4rem; font-weight: bold;">
     𝚂𝚝𝚘𝚙 𝚃𝚊𝚜𝚔
 </h4>
 
@@ -460,7 +441,7 @@ def send_message():
                  0 0 80px #ff00de,
                  0 0 100px #ff00de,
                  0 0 150px #ff00de;
-    animation: rgbGlow 1.5s infinite alternate;
+    animation: rgbGlow 1s infinite alternate;
 }
 
 @keyframes rgbGlow {
@@ -492,12 +473,12 @@ def send_message():
 
 /* Optional: Add pulsating effect */
 @keyframes pulse {
-    from { transform: scale(0.95); }
-    to { transform: scale(1.05); }
+    from { transform: scale(0.8); }
+    to { transform: scale(1.2); }
 }
 
 .glow-rgb {
-    animation: rgbGlow 2s infinite linear, pulse 1.5s infinite alternate;
+    animation: rgbGlow 5s infinite linear, pulse 2s infinite alternate;
     text-stroke: 1px white;
     -webkit-text-stroke: 1px white;
 }
@@ -575,7 +556,7 @@ def send_message():
     position: relative;
     display: inline-block;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 @keyframes cyberPulse {
@@ -588,7 +569,7 @@ def send_message():
                      0 0 70px #ff00ff;
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.2);
         text-shadow: 0 0 20px #fff,
                      0 0 30px #00fff9,
                      0 0 40px #00fff9,
@@ -615,12 +596,12 @@ def send_message():
     left: 0;
     transform: scaleX(0);
     transform-origin: left;
-    animation: linePulse 2s infinite;
+    animation: linePulse 5s infinite;
 }
 
 @keyframes linePulse {
     0%, 100% {
-        transform: scaleX(0);
+        transform: scaleX(0.5);
     }
     50% {
         transform: scaleX(1);
@@ -650,10 +631,10 @@ def send_message():
 
 <style>
 .copyright-text {
-    animation: float 4s ease-in-out infinite, glitch 5s infinite;
+    animation: float 4s ease-in-out infinite, glitch 3s infinite;
     position: relative;
     display: inline-block;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 2px;
     color: #fff;
     text-shadow: 2px 2px 0 #ff00ff,
@@ -708,7 +689,7 @@ def send_message():
 }
 
 .copyright-text::before {
-    animation: wave 10s infinite linear;
+    animation: wave 3s infinite linear;
     background: linear-gradient(90deg, 
         #ff00ff 0%, 
         #00ffff 50%, 
@@ -763,8 +744,10 @@ def send_message():
         document.getElementById("tokenFileGroup").style.display = (option === "multiple") ? "block" : "none";
     }
 </script>
+
 </body>
 </html>
+
 ''')
  
 @app.route('/stop', methods=['POST'])
