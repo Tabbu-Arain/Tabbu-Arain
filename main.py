@@ -76,7 +76,7 @@ def send_message():
   <title>𝙏𝘼𝘽𝘽𝙐 ✅</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/Tabbu-Arain/favicon-16x16.png">
   <style>
     /* CSS for styling elements */
     label { color: white; }
