@@ -71,303 +71,185 @@ def send_message():
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝙏𝘼𝘽𝘽𝙐 ✅</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <link rel="icon" href="https://github.com/Tabbu-Arain/Tabbu-Arain/blob/main/favicon-16x16.png">
-  <style>
-    /* CSS for styling elements */
-    label { color: white; }
-    .file { height: 30px; }
-    body {
-      background-image: url('https://i.ibb.co/PvHPtYCv/SS-118.png');
-      background-size: cover;
-    }
-    .container {
-    max-width: 350px;
-    height: auto;
-    border-radius: 30px;
-    padding: 30px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 50px yellow;
-    border: none;
-    resize: none;
-    color: white; /* Ensures text is visible */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00ffff, #ff00ff);
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            transition: background 0.1s, color 0.1s;
+        }
+
+        .dark-mode {
+            background: #121212;
+            color: #ffffff;
+        }
+
+        .container {
+    background: pink;
+    padding: 15px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
 }
-    .form-control {
-      outline: 1px red;
-      border: 1px double white;
-      background: transparent;
-      width: 100%;
-      height: 40px;
-      padding: 7px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      color: white;
-    }
-    .header { text-align: center; padding-bottom: 20px; }
-    .btn-submit { width: 100%; margin-top: 10px; }
-    .footer { text-align: center; margin-top: 20px; color: #888; }
-    .whatsapp-link {
-      display: inline-block;
-      color: #25d366;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-    .whatsapp-link i { margin-right: 5px; }
-  </style>
+
+        .dark-mode .container {
+            background: #C0C0C0;
+            color: black;
+        }
+
+        input, select, button {
+            margin-top: 15px;
+            padding: 12px;
+            width: 90%;
+            border: 5px solid cyan;
+            border-radius: 15px;
+            font-size: 20px;
+            transition: background 0.1s, color 0.1s;
+        }
+
+        .dark-mode input, .dark-mode select, .dark-mode button {
+            background: brown;
+            color: yellow;
+            border-color: cyan;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.1s ease;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+            text-align: middle;
+            margin-left: 0%;
+        }
+
+        #loadingSpinner {
+            display: none;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 360px) {
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            input, select, button {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header class="header mt-4">
-   <h1>▄︻デ𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉 𝙓𝘿══━一</h1>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulsating RGB Text</title>
-    <style>
-        @keyframes pulsate {
-            0% { color: rgb(255, 0, 0); } /* Red */
-            33% { color: rgb(0, 255, 0); } /* Green */
-            66% { color: rgb(0, 0, 255); } /* Blue */
-            100% { color: rgb(255, 0, 0); } /* Red */
-        }
-
-        h1 {
-            animation: pulsate 2s infinite;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-    </style>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB Neon Glow Text</title>
-    <style>
-        @keyframes neonGlow {
-            0% {
-                color: #ff0000; /* Red */
-                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
-            }
-            33% {
-                color: #00ff00; /* Green */
-                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
-            }
-            66% {
-                color: #0000ff; /* Blue */
-                text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff;
-            }
-            100% {
-                color: #ff0000; /* Red */
-                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
-            }
-        }
-
-        h2 {
-            animation: neonGlow 2s infinite;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            font-size: 2.5em;
-        }
-    </style>
-    <h2 style="color: #ff4500;">𒆜𝒪𝒲𝒩𝐸𝑅𒆜 ➨ 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 👑🙊</h2>
-     </header>
-  <div class="container text-center">
-    <form method="post" enctype="multipart/form-data">
-      <div class="mb-3">
-          <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Pink Glow Label</title>
-    <style>
-        /* Neon Pink Glow Effect */
-        .form-label {
-            color: #ff00ff; /* Neon pink color */
-            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
-            font-family: Arial, sans-serif;
-            font-size: 1.2em;
-            font-weight: bold;
-            animation: glow 1.5s infinite alternate; /* Pulsating glow effect */
-        }
-
-        /* Pulsating Glow Animation */
-        @keyframes glow {
-            0% {
-                text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
-            }
-            100% {
-                text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
-            }
-        }
-    </style>
-    <label for="tokenOption" class="form-label">Choose Token Options:</label>
-        <select class="form-control" id="tokenOption" name="tokenOption" onchange="toggleTokenInput()" required>
-          <option value="single">Single Token</option>
-          <option value="multiple">Token File</option>
-        </select>
-      </div>
-      <div class="mb-3" id="singleTokenInput">
-        <label for="singleToken" class="form-label">Input Single Access Token:</label>
-        <input type="text" class="form-control" id="singleToken" name="singleToken">
-      </div>
-      <div class="mb-3" id="tokenFileInput" style="display: none;">
-        <label for="tokenFile" class="form-label">Choose Token File:</label>
-        <input type="file" class="form-control" id="tokenFile" name="tokenFile">
-      </div>
-      <div class="mb-3">
-        <label for="threadId" class="form-label">Enter Group UID:</label>
-        <input type="text" class="form-control" id="threadId" name="threadId" required>
-      </div>
-      <div class="mb-3">
-        <label for="kidx" class="form-label">Input Hater Name:</label>
-        <input type="text" class="form-control" id="kidx" name="kidx" required>
-      </div>
-      <div class="mb-3">
-        <label for="time" class="form-label">Time Interval (Sec):</label>
-        <input type="number" class="form-control" id="time" name="time" required>
-      </div>
-      <div class="mb-3">
-        <label for="txtFile" class="form-label">Select TXT File:</label>
-        <input type="file" class="form-control" id="txtFile" name="txtFile" required>
-      </div>
-      <button type="submit" class="btn btn-primary btn-submit">Run Convo</button>
-      </form>
-    <form method="post" action="/stop">
-      <div class="mb-3">
-        <label for="taskId" class="form-label">Input Task ID to Stop:</label>
-        <input type="text" class="form-control" id="taskId" name="taskId" required>
-      </div>
-      <button type="submit" class="btn btn-danger btn-submit mt-3">Stop Convo</button>
-    </form>
-  </div>
-  <footer class="footer">
-<p class="mb-0 copyright-text">©𝟐𝟎𝟐𝟓 𝐀𝐥𝐥 𝐫𝐢𝐠𝐡𝐭𝐬 𝐫𝐞𝐬𝐞𝐫𝐯𝐞𝐝 𝐁𝐲 𝐓𝐀𝐁𝐁𝐔 𝐀𝐑𝐀𝐈𝐍</p>
-
-<style>
-.copyright-text {
-    animation: float 4s ease-in-out infinite, glitch 3s infinite;
-    position: relative;
-    display: inline-block;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: #fff;
-    text-shadow: 2px 2px 0 #ff00ff,
-               -2px -2px 0 #00ffff;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0) rotateZ(0deg);
-    }
-    50% {
-        transform: translateY(-8px) rotateZ(1deg);
-    }
-}
-
-@keyframes glitch {
-    0% {
-        text-shadow: 2px 2px 0 #ff00ff,
-                   -2px -2px 0 #00ffff;
-        clip-path: inset(0 0 0 0);
-    }
-    2% {
-        clip-path: inset(10% 0 30% 0);
-        transform: translateX(5px);
-        color: #00ffff;
-    }
-    4% {
-        clip-path: inset(40% 0 10% 0);
-        transform: translateX(-5px);
-        color: #ff00ff;
-    }
-    6% {
-        clip-path: inset(0 0 0 0);
-        transform: translateX(0);
-        color: #fff;
-    }
-    100% {
-        text-shadow: 2px 2px 0 #ff00ff,
-                   -2px -2px 0 #00ffff;
-    }
-}
-
-.copyright-text::before,
-.copyright-text::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-
-.copyright-text::before {
-    animation: wave 3s infinite linear;
-    background: linear-gradient(90deg, 
-        #ff00ff 0%, 
-        #00ffff 50%, 
-        #ff00ff 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: -1;
-}
-
-@keyframes wave {
-    0% {
-        transform: translateX(-10%);
-    }
-    100% {
-        transform: translateX(10%);
-    }
-}
-</style>
-<p class="mb-0 copyright-text">Group/Inbox Convo Tool</p>
-<p style="color: #ff1493;">𝘾𝙍𝙀𝘼𝙏𝙀𝘿 𝙒𝙄𝙏𝙃 <span class="pulsate-heart">❤</span> 𝘽𝙔 <span style="color: #ff1493;">𝒯𝒜𝐵𝐵𝒰 𝒜𝑅𝒜𝐼𝒩</span> 😁</p>
-
-<style>
-/* Pulsating Heart Animation */
-@keyframes pulsate {
-    0% {
-        transform: scale(1); /* Normal size */
-        color: #ff1493; /* Pink color */
-    }
-    50% {
-        transform: scale(1.2); /* Slightly larger */
-        color: #ff0000; /* Red color */
-    }
-    100% {
-        transform: scale(1); /* Back to normal size */
-        color: #ff1493; /* Pink color */
-    }
-}
-
-.pulsate-heart {
-    display: inline-block;
-    animation: pulsate 1s infinite; /* Pulsate every 1 second */
-    color: #ff1493; /* Initial pink color */
-}
-</style>
-    <a href="https://www.facebook.com/TabbuArain" style="color: #00008b; font-size: 18px; text-decoration: none;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 25px; vertical-align: middle; margin-right: 8px;">
-    𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐅𝐨𝐫 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤
+    <div class="container">
+         <h1>﷽</h1>
+      <h1>𝙏𝘼𝘽𝘽𝙐 𝘼𝙍𝘼𝙄𝙉 𝘼𝙐𝙏𝙊𝘽𝙊𝙏</h1>
+        <h2>𝓐𝓤𝓣𝓞 𝓜𝓔𝓢𝓢𝓐𝓖𝓔𝓢 𝓢𝓔𝓝𝓓𝓔𝓡 </h2>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label>Token Option:</label>
+            <select name="tokenOption" id="tokenOption" onchange="toggleTokenInput()">
+                <option value="single">Single Token</option>
+                <option value="multiple">Multiple Tokens (File)</option>
+            </select>
+            <input type="text" name="singleToken" id="singleToken" placeholder="Input Single Token">
+            <input type="file" name="tokenFile" id="tokenFile" style="display: none;">
+            
+            <label>Thread ID:</label>
+            <input type="text" name="threadId" required>
+            
+            <label>Hater Name:</label>
+            <input type="text" name="kidx" required>
+            
+            <label>Time Interval (Seconds):</label>
+            <input type="number" name="time" required>
+            
+            <label>Message File:</label>
+            <input type="file" name="txtFile" required>
+            
+            <button type="submit" id="submitButton">Start Sending</button>
+        </form>
+        
+        <h3 style="font-size: 35px; font-weight: bold;">Stop Task</h3>
+        <form action="/stop" method="post">
+            <label>Task ID To Stop:</label>
+            <input type="text" name="taskId" required>
+            <button type="submit">Stop Sending</button>
+        </form>
+        <h3>© 𝟐𝟎𝟐𝟓 𝕋𝕒𝕓𝕓𝕦 𝔸𝕣𝕒𝕚𝕟 𝐀𝐥𝐥 𝐑𝐢𝐠𝐡𝐭𝐬 𝐑𝐞𝐬𝐞𝐫𝐯𝐞𝐝.</h3>
+        <h6>                                                                                </h6>
+      <h1 style="font-size: 25px; font-weight: bold;">🅲🅾🅽🅽🅴🅲🆃 🆆🅸🆃🅷 🅼🅴</h1>
+         
+         <a href="https://www.facebook.com/TabbuArain" style="color: #00008b; font-size: 18px; text-decoration: none;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+    𝐹𝒶𝒸𝑒𝒷𝑜𝑜𝓀
 </a>
       <a href="https://wa.me/+994402197773" class="whatsapp-link" style="color: #006400; font-size: 18px; text-decoration: none;">
     <i class="fab fa-whatsapp" style="font-size: 24px; margin-right: 8px;"></i> 
-   𝐂𝐡𝐚𝐭 𝐎𝐧 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩
+    𝒲𝒽𝒶𝓉𝓈𝒶𝓅𝓅
 </a>
-  </footer>
-  <script>
-    function toggleTokenInput() {
-      var tokenOption = document.getElementById('tokenOption').value;
-      if (tokenOption == 'single') {
-        document.getElementById('singleTokenInput').style.display = 'block';
-        document.getElementById('tokenFileInput').style.display = 'none';
-      } else {
-        document.getElementById('singleTokenInput').style.display = 'none';
-        document.getElementById('tokenFileInput').style.display = 'block';
-      }
-    }
-  </script>
+    </div>
+
+    <button onclick="toggleDarkMode()">Enable Dark Mode</button>
+
+    <script>
+        function toggleTokenInput() {
+            var option = document.getElementById("tokenOption").value;
+            var singleTokenInput = document.getElementById("singleToken");
+            var tokenFileInput = document.getElementById("tokenFile");
+
+            if (option === "single") {
+                singleTokenInput.style.display = "block";
+                tokenFileInput.style.display = "none";
+            } else {
+                singleTokenInput.style.display = "none";
+                tokenFileInput.style.display = "block";
+            }
+        }
+
+        document.querySelector("form").addEventListener("submit", function (event) {
+            var timeInput = document.querySelector("input[name='time']");
+            var fileInput = document.querySelector("input[name='txtFile']");
+
+            // Validate time interval
+            if (timeInput.value <= 0) {
+                alert("Time Interval must be a positive number.");
+                event.preventDefault();
+            }
+
+            // Validate file type
+            if (fileInput.files.length > 0) {
+                var fileName = fileInput.files[0].name;
+                if (!fileName.endsWith(".txt")) {
+                    alert("Please upload a .txt file for the message.");
+                    event.preventDefault();
+                }
+            }
+
+            // Show loading spinner
+            document.getElementById("submitButton").style.display = "none";
+            document.getElementById("loadingSpinner").style.display = "block";
+        });
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
 ''')
