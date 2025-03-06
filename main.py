@@ -73,7 +73,7 @@ def send_message():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messenger Bot</title>
+    <title>丅ᗩᗷᗷᑌ 🍁</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -94,7 +94,7 @@ def send_message():
     padding: 15px;
     border-radius: 40px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -144,7 +144,7 @@ def send_message():
             margin-top: 20px;
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 360px) {
             .container {
                 padding: 15px;
                 max-width: 100%;
