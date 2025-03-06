@@ -144,7 +144,7 @@ def send_message():
             margin-top: 20px;
         }
 
-        @media (max-width: 360px) {
+        @media (max-width: 500px) {
             .container {
                 padding: 15px;
                 max-width: 100%;
