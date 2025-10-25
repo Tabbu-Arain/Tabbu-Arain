@@ -70,10 +70,11 @@ return f'Task started with ID: {task_id} By Tabbu Convo Server'
 return render_template_string('''
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝙋𝙀𝙀𝙍 😈</title>
+    <title>𝙏𝘼𝘽𝘽𝙐 😈</title>
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzAwMDAwMCIvPgo8cmVjdCB4PSI4IiB5PSI4IiB3aWR0aD0iMTYiIGhlaWdodD0iNCIgZmlsbD0iIzAwZDRmZiIvPgo8cmVjdCB4PSIxNCIgeT0iMTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjE2IiBmaWxsPSIjMDBkNGZmIi8+Cjwvc3ZnPg==">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -147,66 +148,66 @@ return render_template_string('''
             margin-bottom: 10px;
         }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header mt-4">
-      <h1 class="mt-3" style="color: red;">𝐏𝐄𝐄𝐑 𝐁𝐑𝐀𝐍𝐃</h1>
+        <h1 class="mt-3" style="color: red;">𝐓𝐀𝐁𝐁𝐔 𝐀𝐑𝐀𝐈𝐍</h1>
+
     </header>
     <div class="container text-center">
-      <form method="post" enctype="multipart/form-data">
-        <div class="mb-3">
-          <label for="tokenOption" class="form-label">𝐒𝐞𝐥𝐞𝐜𝐭 𝐓𝐨𝐤𝐞𝐧 𝐎𝐩𝐭𝐢𝐨𝐧</label>
-          <select class="form-control" id="tokenOption" name="tokenOption" onchange="toggleTokenInput()" required>
-            <option value="single">𝐒𝐢𝐧𝐠𝐥𝐞 𝐓𝐨𝐤𝐞𝐧</option>
-            <option value="multiple">𝐓𝐨𝐤𝐞𝐧 𝐅𝐢𝐥𝐞</option>
-          </select>
-        </div>
-        <div class="mb-3" id="singleTokenInput">
-          <label for="singleToken" class="form-label">𝐏𝐚𝐬𝐭𝐞 𝐒𝐢𝐧𝐠𝐥𝐞 𝐓𝐨𝐤𝐞𝐧</label>
-          <input type="text" class="form-control" id="singleToken" name="singleToken">
-        </div>
-        <div class="mb-3" id="tokenFileInput" style="display: none;">
-          <label for="tokenFile" class="form-label">𝐂𝐡𝐨𝐨𝐬𝐞 𝐓𝐨𝐤𝐞𝐧 𝐅𝐢𝐥𝐞</label>
-          <input type="file" class="form-control" id="tokenFile" name="tokenFile">
-        </div>
-        <div class="mb-3">
-          <label for="threadId" class="form-label">𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃</label>
-          <input type="text" class="form-control" id="threadId" name="threadId" required>
-        </div>
-        <div class="mb-3">
-          <label for="kidx" class="form-label">𝐄𝐧𝐭𝐞𝐫 𝐘𝐨𝐮𝐫 𝐇𝐚𝐭𝐞𝐫 𝐍𝐚𝐦𝐞</label>
-          <input type="text" class="form-control" id="kidx" name="kidx" required>
-        </div>
-        <div class="mb-3">
-          <label for="time" class="form-label">𝐓𝐢𝐦𝐞 𝐈𝐧𝐭𝐞𝐫𝐯𝐚𝐥 (𝐒𝐞𝐜)</label>
-          <input type="number" class="form-control" id="time" name="time" required>
-        </div>
-        <div class="mb-3">
-          <label for="txtFile" class="form-label">𝐂𝐡𝐨𝐨𝐬𝐞 𝐍𝐩 𝐅𝐢𝐥𝐞</label>
-          <input type="file" class="form-control" id="txtFile" name="txtFile" required>
-        </div>
-        <button type="submit" class="btn btn-red btn-submit">𝚂𝚝𝚊𝚛𝚝 𝙲𝚘𝚗𝚟𝚘</button>
-      </form>
-      <form method="post" action="/stop">
-        <div class="mb-3">
-          <label for="taskId" class="form-label">𝐄𝐧𝐭𝐞𝐫 𝐓𝐚𝐬𝐤 𝐈𝐃 𝐭𝐨 𝐒𝐭𝐨𝐩</label>
-          <input type="text" class="form-control" id="taskId" name="taskId" required>
-        </div>
-        <button type="submit" class="btn btn-red btn-submit">𝚂𝚝𝚘𝚙 𝙲𝚘𝚗𝚟𝚘</button>
-      </form>
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="tokenOption" class="form-label">𝐒𝐞𝐥𝐞𝐜𝐭 𝐓𝐨𝐤𝐞𝐧 𝐎𝐩𝐭𝐢𝐨𝐧</label>
+                <select class="form-control" id="tokenOption" name="tokenOption" onchange="toggleTokenInput()" required>
+                    <option value="single">𝐒𝐢𝐧𝐠𝐥𝐞 𝐓𝐨𝐤𝐞𝐧</option>
+                    <option value="multiple">𝐓𝐨𝐤𝐞𝐧 𝐅𝐢𝐥𝐞</option>
+                </select>
+            </div>
+            <div class="mb-3" id="singleTokenInput">
+                <label for="singleToken" class="form-label">𝐏𝐚𝐬𝐭𝐞 𝐒𝐢𝐧𝐠𝐥𝐞 𝐓𝐨𝐤𝐞𝐧</label>
+                <input type="text" class="form-control" id="singleToken" name="singleToken">
+            </div>
+            <div class="mb-3" id="tokenFileInput" style="display: none;">
+                <label for="tokenFile" class="form-label">𝐂𝐡𝐨𝐨𝐬𝐞 𝐓𝐨𝐤𝐞𝐧 𝐅𝐢𝐥𝐞</label>
+                <input type="file" class="form-control" id="tokenFile" name="tokenFile">
+            </div>
+            <div class="mb-3">
+                <label for="threadId" class="form-label">𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐫𝐞𝐚𝐝 𝐈𝐃</label>
+                <input type="text" class="form-control" id="threadId" name="threadId" required>
+            </div>
+            <div class="mb-3">
+                <label for="kidx" class="form-label">𝐄𝐧𝐭𝐞𝐫 𝐘𝐨𝐮𝐫 𝐇𝐚𝐭𝐞𝐫 𝐍𝐚𝐦𝐞</label>
+                <input type="text" class="form-control" id="kidx" name="kidx" required>
+            </div>
+            <div class="mb-3">
+                <label for="time" class="form-label">𝐓𝐢𝐦𝐞 𝐈𝐧𝐭𝐞𝐫𝐯𝐚𝐥 (𝐒𝐞𝐜)</label>
+                <input type="number" class="form-control" id="time" name="time" required>
+            </div>
+            <div class="mb-3">
+                <label for="txtFile" class="form-label">𝐂𝐡𝐨𝐨𝐬𝐞 𝐍𝐩 𝐅𝐢𝐥𝐞</label>
+                <input type="file" class="form-control" id="txtFile" name="txtFile" required>
+            </div>
+            <button type="submit" class="btn btn-red btn-submit">𝚂𝚝𝚊𝚛𝚝 𝙲𝚘𝚗𝚟𝚘</button>
+        </form>
+        <form method="post" action="/stop">
+            <div class="mb-3">
+                <label for="taskId" class="form-label">𝐄𝐧𝐭𝐞𝐫 𝐓𝐚𝐬𝐤 𝐈𝐃 𝐭𝐨 𝐒𝐭𝐨𝐩</label>
+                <input type="text" class="form-control" id="taskId" name="taskId" required>
+            </div>
+            <button type="submit" class="btn btn-red btn-submit">𝚂𝚝𝚘𝚙 𝙲𝚘𝚗𝚟𝚘</button>
+        </form>
     </div>
     <footer class="footer">
-      <p style="color: red;">© 𝐎𝐖𝐍𝐄𝐑 ：𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐘𝐎𝐔𝐒𝐀𝐅 ❢</p>
-      <a href="https://www.facebook.com/100007182255126" class="facebook-link" style="margin-right: 30px; text-decoration: none;">
-        <i class="fab fa-facebook">
-        </i> 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺
+        <p style="color: red;">© 𝐎𝐖𝐍𝐄𝐑 ：𝐌𝐔𝐇𝐀𝐌𝐌𝐀𝐃 𝐓𝐀𝐁𝐀𝐒𝐒𝐔𝐌 ❢</p>
+        <a href="https://www.facebook.com/MISTER.T0M" class="facebook-link" style="margin-right: 30px; text-decoration: none;">
+            <i class="fab fa-facebook"></i> 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺
         </a>
         <a href="https://wa.me/+994402197773" class="whatsapp-link">
-          <i class="fab fa-whatsapp">
-          </i>𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿
+            <i class="fab fa-whatsapp"></i>𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿
         </a>
-        </footer>
-        <script>
+    </footer>
+    <script>
         function toggleTokenInput() {
             var tokenOption = document.getElementById('tokenOption').value;
             if (tokenOption == 'single') {
@@ -218,8 +219,9 @@ return render_template_string('''
             }
         }
     </script>
-      </body>
-    </html>
+</body>
+
+</html>
 ''')
 
 @app.route('/stop', methods=['POST'])
